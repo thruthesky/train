@@ -1,10 +1,21 @@
 <?php
 
-function multi ($b, $c) {
-	return $b * $c;
-}
+//function multi ($b, $c) {
+//	return $b * $c;
+//}
 
-echo multi(1,2);
+// This is no good.
+//echo multi(1,2);
+
+
+
+// These days, we do not code like this
+echo function ($b, $c) {
+	return $b * $c;
+}( 2, 3 );
+
+
+
 
 
 
